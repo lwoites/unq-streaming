@@ -19,8 +19,7 @@ To run a specific pipeline.
 ## Defining new pipelines
 
 To define a new pipeline you have to:
-1. Define a new class on the `pipelines.py` file and MUST have de word Pipeline
-at the beginning or the end of the class name.
+1. Define a new class on the `pipelines.py` file. The class name MUST have the word Pipeline at the beginning or the end.
 2. Define the method `build_pipeline(self, args)` that have to return a `Gst.Pipeline`
 3. You are encouraged to subclass from `BasePipeline` to reuse some of the methods defined there.
 
