@@ -23,3 +23,9 @@ To define a new pipeline you have to:
 at the beginning or the end of the class name.
 2. Define the method `build_pipeline(self, args)` that have to return a `Gst.Pipeline`
 3. You are encouraged to subclass from `BasePipeline` to reuse some of the methods defined there.
+
+## Dependendies
+
+* Python2
+* gst-Python
+* gstreamer and as much plugins as you need :)
