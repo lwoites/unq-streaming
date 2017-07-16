@@ -1,6 +1,8 @@
 #!/bin/bash
 
-rm hls/*
+mkdir -p hls  # For the first run only
+
+rm -f hls/*
 cp playlist.m3u8 hls/
 cd hls 
 python2 ../../pipeline_builder/pipeline_builder.py AdaptativeStreamingPipeline &
